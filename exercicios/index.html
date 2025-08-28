@@ -1,26 +1,117 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Exercício 1</title>
+  <meta charset="UTF-8">
+  <title>Formulário de Contato</title>
+  <style>
+    body {
+      background: #fff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      font-family: Arial, sans-serif;
+    }
+
+    .formulario {
+      background: #8b4513; /* marrom */
+      padding: 20px;
+      border-radius: 15px;
+      width: 450px;
+      color: #fff;
+      text-align: center;
+    }
+
+    h2 {
+      margin: 0;
+    }
+
+    p {
+      font-size: 13px;
+      margin: 5px 0 15px 0;
+    }
+
+    hr {
+      border: 1px solid #000;
+      margin-bottom: 15px;
+    }
+
+    .campo {
+      display: flex;
+      align-items: center;
+      margin-bottom: 15px;
+    }
+
+    label {
+      width: 80px;
+      font-weight: bold;
+      text-align: left;
+    }
+
+    input, select, textarea {
+      flex: 1;
+      padding: 8px;
+      border: none;
+      border-radius: 5px;
+      background: #f5deb3; /* bege */
+    }
+
+    textarea {
+      height: 80px;
+      resize: none;
+    }
+
+    button {
+      background: #000;
+      color: #ffd700;
+      padding: 8px 15px;
+      border: none;
+      border-radius: 5px;
+      font-weight: bold;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background: #333;
+    }
+  </style>
 </head>
 <body>
-    <table>
-        <tr>
-            <td>Period</td>
-            <td>Android</td>
-            <td>IOS</td>
-            <td>Windows Phone</td>
-            <td>Others</td>
-        </tr>
-        <tr>
-            <td>2016Q1</td>
-            <td>83.4%</td>
-            <td>15.4%</td>
-            <td>0.8%</td>
-            <td>0.4%</td>
-        </tr>
-    </table>
+
+  <div class="formulario">
+    <h2>Formulário de Contato</h2>
+    <p>Preencha todos os campos.</p>
+    <hr>
+
+    <form>
+      <div class="campo">
+        <label for="nome">Nome :</label>
+        <input type="text" id="nome" placeholder="Nome completo">
+      </div>
+
+      <div class="campo">
+        <label for="email">Email :</label>
+        <input type="email" id="email" placeholder="E-mail válido">
+      </div>
+
+      <div class="campo">
+        <label for="assunto">Assunto :</label>
+        <select id="assunto">
+          <option>Selecione</option>
+          <option>Dúvida</option>
+          <option>Sugestão</option>
+          <option>Reclamação</option>
+        </select>
+      </div>
+
+      <div class="campo">
+        <label for="mensagem">Mensagem :</label>
+        <textarea id="mensagem" placeholder="Sua mensagem"></textarea>
+      </div>
+
+      <button type="submit">Enviar</button>
+    </form>
+  </div>
+
 </body>
 </html>
