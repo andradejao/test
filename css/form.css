@@ -1,0 +1,56 @@
+/* Reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+
+.formContainer {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+
+}
+
+td {
+    background-color: #d3d3d3;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#period {
+    background-color: grey;
+    font-weight: bold;
+}
+
+#android {
+    background-color: #d2e9af;
+    font-weight: bold;
+}
+
+#ios {
+    background-color: #88b7d5;
+    font-weight: bold;
+}
+
+#windows {
+    background-color: #be7abb;
+    font-weight: bold;
+}
+
+#others {
+    background-color: #ff7538;
+    font-weight: bold;
+}
+table {
+    width: 60%;
+}
+
+td {
+    padding: 10px;
+}
+
+.tdColor {
+    font-weight: bold;
+}
