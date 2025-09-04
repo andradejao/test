@@ -1,0 +1,51 @@
+/* Reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+body{
+    margin: 20px;
+    padding: 20px;
+}
+
+/* Desativar Incrementador Input Number */
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+.container {
+    width: 400px;
+    /* height: 400px; */
+    padding: 30px;
+    border: double red 22px;
+    text-align: left;
+    font-size: 18pt;
+}
+
+.containerFlex {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+}
+
+.inputNumber {
+    border: solid 1px black;
+    font-size: 15pt;
+    background-color: yellow;
+    margin: 2px;
+    height: 27px;
+}
+
+label {
+    font-weight: bold;
+}
+
+button {
+    width: 65px;
+    height: 15x;
+    cursor: pointer;
+}
