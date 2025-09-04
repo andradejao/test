@@ -6,31 +6,43 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Calc</title>
     <link rel="stylesheet" href="../css/formcalc.css">
+    <script src="../js/formcalc.js"></script>
 </head>
 
 <body>
     <div class="containerFlex">
         <div class="container">
-            <label for="valor1" id="valor1" name="valor1">Valor 1:</label>
-            <input type="number" class="inputNumber" id="inputValor1">
-            <br>
-            <label for="valor2" id="valor2" name="valor2">Valor 2:</label>
-            <input type="number" class="inputNumber" id="inputValor2">
-            <br>
-            <label for="opcoes" id="opcoes" name="opcoes">Opções:</label>
-            <br>
-            <input type="radio" value="soma" name="radioButton" id="radioSoma"> SOMA
-            <br>
-            <input type="radio" value="subtracao" name="radioButton" id="radioSubtracao"> SUBTRAÇÃO
-            <br>
-            <input type="radio" value="multiplicacao" name="radioButton" id="radioMultiplicacao"> MULTIPLICAÇÃO
-            <br>
-            <input type="radio" value="divisao" name="radioButton" id="radioDivisao"> DIVISÃO
-            <br>
-            <label for="resultado" id="resultado">Resultado: </label>
-            <input type="number" class="inputNumber" id="inputResultado">
-            <br>
-            <button>Calcular</button>
+            <form id="meuForm" onsubmit="return false">
+                <label id="valor1" name="valor1" class="labelDecoration">Valor 1:</label>
+                <input type="number" class="inputNumber" id="inputValor1">
+                <br>
+                <label id="valor2" name="valor2" class="labelDecoration">Valor 2:</label>
+                <input type="number" class="inputNumber" id="inputValor2">
+                <br>
+                <label for="opcoes" id="opcoes" name="opcoes" class="labelDecoration">Opções:</label>
+                <br>
+                <label for="radioSoma">
+                    <input type="radio" value="soma" name="radioButton" id="radioSoma"> SOMA
+                    <br>
+                </label>
+                <label for="radioSubtracao">
+                    <input type="radio" value="subtracao" name="radioButton" id="radioSubtracao"> SUBTRAÇÃO
+                </label>
+                <br>
+                <label for="radioMultiplicacao">
+                    <input type="radio" value="multiplicacao" name="radioButton" id="radioMultiplicacao"> MULTIPLICAÇÃO
+                    <br>
+                </label>
+                <label for="radioDivisao">
+                    <input type="radio" value="divisao" name="radioButton" id="radioDivisao"> DIVISÃO
+                    <br>
+                </label>
+                <label id="resultado" class="labelDecoration">Resultado: </label>
+                <input type="number" class="inputNumber" id="inputResultado">
+                <br>
+                <button onclick="calcular()">Calcular</button>
+                <button onclick="limpar()">Limpar</button>
+            </form>
         </div>
     </div>
 </body>
